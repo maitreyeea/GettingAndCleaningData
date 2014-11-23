@@ -6,7 +6,7 @@ The data for this project represents data collected from the accelerometers from
 
 run_analysis.R Script
 ------------------------------------------------------
-The script will tidy up test and traini data set using following approach. `` run_analysis.R `` script assumes that data is donwloaded and unzipped in the working directory.
+The script will tidy up test and traini data set using following approach. `` run_analysis.R `` script assumes that data is donwloaded and unzipped in the working directory. Paste the script in parent directory of unzipped data folder and to run the script set working directory to source file location and click on 'Source' button in RStudio.
 
 1. Read all the necessary files required to perform the cleanup and analysis.
 	
