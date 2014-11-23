@@ -35,7 +35,7 @@ The measure variables for this project come form feature dataset. the variables 
       3. Create tidy dataset with only average of each variable for each activity and each subject.
   * Final aggregated dataset 
       1. Rows : 180 
-      2. Columns : 70
+      2. Columns : 70 (including 4 columns described above)
   * Measure variable list -
     
   |  Final Column List                       | 
