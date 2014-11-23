@@ -2,12 +2,12 @@ CodeBook
 ====================
 Purpose
 --------------------------
-The purpose of this coursera project is to obtain and transform a raw or dirty data set into clean or tidy data set. Data used for this project is experimental data obtained from 'Human Activty Recognition using Smartphone Dataset'experiment. it records data coolected from accelerometer and gyroscope of Samsung Galaxy S II.
+The purpose of this coursera project is to obtain and transform a raw or dirty data set into clean or tidy data set. Data used for this project is experimental data obtained from 'Human Activty Recognition using Smartphone Dataset'experiment. it records data collected from accelerometer and gyroscope of Samsung Galaxy S II.
 
 Script reads following files - 
 -----------------------------
    * 'activity_labels.txt': Links the class labels with their activity name.
-   * 'features.txt' : omplete list of all features from accelerometer and gyroscope(e.g body and gravity accelerometer and gyrometer signals)
+   * 'features.txt' : Complete list of all features from accelerometer and gyroscope(e.g body and gravity accelerometer and gyrometer signals)
    *  Test subject datasets - 'subject_test.txt', 'X_test.txt' and 'y_test.txt' datasets
    * Train subject datasets - 'subject_train.txt', 'X_train.txt' and 'y_train.txt' datasets
    * Subject text file identifieds subjects who performed the activities and range from 1 to 30
