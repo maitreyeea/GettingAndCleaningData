@@ -13,8 +13,8 @@ train_set <- read.table("./UCI HAR Dataset/train/X_train.txt") # Values recorded
 train_label <- read.table("./UCI HAR Dataset/train/y_train.txt") # Activities perfomred by each subjects in the form of labels
 
 # Transformations 
-names(activity_labels)[1]<- paste("Activity_ID") # Renaming the columns in activity data set for clarity and 'merge' purpose in the code
-names(activity_labels)[2]<- paste("Activity_Labels")
+names(activity_labels)[1]<- paste("Activity.ID") # Renaming the columns in activity data set for clarity and 'merge' purpose in the code
+names(activity_labels)[2]<- paste("Activity.Labels")
 colnames(test_set) <- features$V2 # award 561 features as column names for 561 values recorderd for test volunteers
 colnames(train_set) <- features$V2 # award 561 features as column names for 561 values recorderd for train volunteers
 
@@ -31,8 +31,8 @@ names(train_intermid)[1]<- paste("Subjects")
 names(train_intermid)[563] <- paste("Labels")
 
 # Uses descriptive activity names to name the activities in the data set
-train_final <- merge (activity_labels,train_intermid,by.x = "Activity_ID",by.y = "Labels", all= FALSE)
-test_final <- merge (activity_labels,test_intermid,by.x = "Activity_ID",by.y = "Labels", all= FALSE)
+train_final <- merge (activity_labels,train_intermid,by.x = "Activity.ID",by.y = "Labels", all= FALSE)
+test_final <- merge (activity_labels,test_intermid,by.x = "Activity.ID",by.y = "Labels", all= FALSE)
 
 # Merge Test and Train dataset to create one data set - 
 tidy_intermid <- rbind(test_final,train_final)
@@ -48,11 +48,13 @@ label2 = gsub("-std","StdDev",label1) # Rename the word std in the string as 'St
 label3 = gsub("-mean","Mean",label2) # Rename/substitute the word mean in the string as 'Mean'
 label4 = gsub("^(t)","Time",label3) # substitute 'Time' in the place of t in the string
 label5 = gsub("^(f)","FFT",label4)# substitute 'Freq' in the place of f in the string
-colnames(tidy_final) <- label5
+label6 = gsub("BodyBody","Body",label5)# substitute 'Body' in the place of 'BodyBody' in the string
+label7 = gsub("-",".",label6)# substitute 'Body' in the place of 'BodyBody' in the string
+colnames(tidy_final) <- label7
 
 # From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject
 # Performs aggregation with aggregate function as 'mean' on the above created tidy_final data set excluding the descriptive variables
-tidy_agg <- as.data.frame(aggregate(. ~ Activity_ID+Activity_Labels+Subjects+Identifier,data = tidy_final,FUN= mean))
+tidy_agg <- as.data.frame(aggregate(. ~ Activity.ID+Activity.Labels+Subjects+Identifier,data = tidy_final,FUN= mean))
 
 # Export the tidy data set  created in last step
 write.table(tidy_agg, "./tidy_agg.txt",row.names=FALSE,sep='\t');
