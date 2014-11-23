@@ -38,7 +38,7 @@ The measure variables for this project come form feature dataset. the variables 
       1. Rows : 180 
       2. Columns : 70 (including 4 columns described above)
  
- * Measure variable list -
+* Measure variable list -
     
   |  Final Column List                       | 
   | ---------------------------- | 
