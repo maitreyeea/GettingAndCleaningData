@@ -27,84 +27,36 @@ Descriptive variables (existing and new) for tidy_final data set
 
 Measure variables created from Features.txt file for tidy_final data set
 -----------------------------------------------------------------------
-The measure variables for this project come form feature dataset. the variables include accelerometer and gyroscope 3-axial raw time domaun signals and variables created by applying Fast Fourier Transform on few varialbes. 
+The measure variables for this project come form feature dataset. the variables include accelerometer and gyroscope 3-axial raw time domain signals and calculated variables created by applying Fast Fourier Transform on few variables. 
 
   * Transformations  
       1. Extract only the measurements on the mean and standard deviation for each measurement. 
-      2. Give appropriate descriptive names to the variables
+      2. Give appropriate descriptive names to the variables.
       3. Create tidy dataset with only average of each variable for each activity and each subject.
   
   * Final aggregated dataset 
       1. Rows : 180 
       2. Columns : 70 (including 4 columns described above)
  
-* Measure variable list -
+* Example of Measure variable list -
     
   |  Final Column List                       | 
   | ---------------------------- | 
-| TimeBodyAccMean-X |
-| TimeBodyAccMean-Y |
-TimeBodyAccMean-Z |
-TimeBodyAcc-std-X |
-TimeBodyAcc-std-Y |
-TimeBodyAcc-std-Z |
-TimeGravityAccMean-X |
-TimeGravityAccMean-Y |
-TimeGravityAccMean-Z |
-TimeGravityAcc-std-X |
-TimeGravityAcc-std-Y |
-TimeGravityAcc-std-Z |
-TimeBodyAccJerkMean-X |
-TimeBodyAccJerkMean-Y |
-TimeBodyAccJerkMean-Z |
-TimeBodyAccJerk-std-X |
-TimeBodyAccJerk-std-Y |
-TimeBodyAccJerk-std-Z |
-TimeBodyGyroMean-X  |
-TimeBodyGyroMean-Y |
-TimeBodyGyroMean-Z |
-TimeBodyGyro-std-X |
-TimeBodyGyro-std-Y |
-TimeBodyGyro-std-Z |
-TimeBodyGyroJerkMean-X |
-TimeBodyGyroJerkMean-Y |
-TimeBodyGyroJerkMean-Z |
-TimeBodyGyroJerk-std-X |
-TimeBodyGyroJerk-std-Y |
-TimeBodyGyroJerk-std-Z |
+| TimeBodyAccMean.X |
+| TimeBodyAccMean.Y |
+TimeBodyAcc-std.Z |
 TimeBodyAccMagMean |
 TimeBodyAccMagStdDev |
-TimeGravityAccMagMean |
-TimeGravityAccMagStdDev |
-TimeBodyAccJerkMagMean |
-TimeBodyAccJerkMagStdDev |
-TimeBodyGyroMagMean |
-TimeBodyGyroMagStdDev |
-TimeBodyGyroJerkMagMean |
-TimeBodyGyroJerkMagStdDev |
-FFTBodyAccMean-X | 
-FFTBodyAccMean-Y|
-FFTBodyAccMean-Z |
-FFTBodyAcc-std-X |
-FFTBodyAcc-std-Y |
-FFTBodyAcc-std-Z | 
-FFTBodyAccJerkMean-X |
-FFTBodyAccJerkMean-Y |
-FFTBodyAccJerkMean-Z |
-FFTBodyAccJerk-std-X |
-FFTBodyAccJerk-std-Y |
-FFTBodyAccJerk-std-Z |
-FFTBodyGyroMean-X |
-FFTBodyGyroMean-Y |
-FFTBodyGyroMean-Z |
-FFTBodyGyro-std-X |
-FFTBodyGyro-std-Y |
-FFTBodyGyro-std-Z |
+FFTBodyAccMean.X | 
+FFTBodyAccMean.Y|
+FFTBodyGyroMean.X |
+FFTBodyGyroMean.Y |
+FFTBodyGyro-std.Z |
 FFTBodyAccMagMean |
 FFTBodyAccMagStdDev |
-FFTBodyBodyAccJerkMagMean |
-FFTBodyBodyAccJerkMagStdDev |
-FFTBodyBodyGyroMagMean |
-FFTBodyBodyGyroMagStdDev |
-FFTBodyBodyGyroJerkMagMean |
-FFTBodyBodyGyroJerkMagStdDev |
+FFTBodyAccJerkMagMean |
+FFTBodyAccJerkMagStdDev |
+FFTBodyGyroMagMean |
+FFTBodyGyroMagStdDev |
+FFTBodyGyroJerkMagMean |
+FFTBodyGyroJerkMagStdDev |
