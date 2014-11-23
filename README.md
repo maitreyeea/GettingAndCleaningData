@@ -6,7 +6,7 @@ The data for this project represents data collected from the accelerometers from
 
 run_analysis.R Script
 ------------------------------------------------------
-The script will tidy up test and traini data set using following approach. `` run_analysis.R `` script assumes that data is donwloaded and unzipped in the working directory. Paste the script in parent directory of unzipped data folder and to run the script set working directory to source file location and click on 'Source' button in RStudio.
+The script will tidy up test and train data set using following approach. `` run_analysis.R `` script assumes that data is donwloaded and unzipped in the working directory. Paste the script in parent directory of unzipped data folder and to run the script by setting working directory to source file location and click on 'Source' button in RStudio.
 
 1. Read all the necessary files required to perform the cleanup and analysis.
 	
@@ -18,7 +18,7 @@ The script will tidy up test and traini data set using following approach. `` ru
 
 4. Create a train data frame by -
 	*  column binding the subject, x and y train data sets
-   * adding a new column name identifier with value as 'train' to identify test records
+   * adding a new column name identifier with value as 'train' to identify train records
 
 5. Merge test and train each data set with activity_labels data set to obtain descriptive activity name against activity lables from y_test and y_train columns in the data frame.
 
